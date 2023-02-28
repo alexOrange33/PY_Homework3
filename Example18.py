@@ -17,7 +17,7 @@ x = int (input("Введите число для сравнения: "))
 min = x - list[0]
 temp = 0
 for i in range(0,len(list)):
-    if min > (x-list[i]):
-        min = x-list[i]
+    if min > abs(x-list[i]):
+        min = abs(x-list[i])
         temp = i
 print(list[temp])
